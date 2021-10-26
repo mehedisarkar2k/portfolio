@@ -12,13 +12,13 @@
 1. Clone the repository
 
 ```sh
-cd git@github.com:mehedisarkar2k/react-startup.git
+git clone git@github.com:mehedisarkar2k/react-startup.git
 ```
 
 or
 
 ```sh
-cd https://github.com/mehedisarkar2k/react-startup.git
+git clone https://github.com/mehedisarkar2k/react-startup.git
 ```
 
 2. To install the project
