@@ -21,7 +21,7 @@
   section {
   }
   .btn {
-    @apply border-none focus:outline-none;
+    @apply px-6 py-3 focus:outline-none;
   }
   .btn-primary {
   }

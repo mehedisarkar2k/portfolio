@@ -3,3 +3,8 @@
     fixed;
   width: 100%;
 }
+
+.Btn:hover .BtnArrow {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
