@@ -9,6 +9,7 @@ const Nav = () => {
       setScroll(window.scrollY > "100");
     });
   }, []);
+
   console.log(scroll);
 
   return (
