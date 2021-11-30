@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import About from "./components/About/About";
 import Banner from "./components/Banner/Banner";
+import Contact from "./components/Contact/Contact";
 import Nav from "./components/Nav/Nav";
 import Project from "./components/Projects/Project";
 
@@ -15,6 +16,7 @@ function App() {
             <Nav />
             <About />
             <Project />
+            <Contact />
           </Route>
         </Switch>
       </Router>
