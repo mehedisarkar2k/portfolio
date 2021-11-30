@@ -9,35 +9,56 @@ const Nav = () => {
       setScroll(window.scrollY > "100");
     });
   }, []);
+
   console.log(scroll);
 
   return (
     <div className="bg-dark-blue w-full shadow-sm">
       <div className={`my-container ${Classes.Nav}`}>
-        <nav className="py-4">
+        <nav className="py-6">
           <ul className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 text-xl font-light tracking-wide">
-            <li>
-              <NavLink className="text-white" to="/">
+            <li className="hover:bg-primary-light transition rounded-lg">
+              <NavLink
+                activeClassName="bg-primary-light  px-4 py-2 transition rounded-lg"
+                className="text-white"
+                to="/"
+              >
                 Home
               </NavLink>
             </li>
-            <li>
-              <NavLink className="text-white" to="/">
+            <li className="hover:bg-primary-light transition rounded-lg">
+              <NavLink
+                activeClassName="bg-primary-light  px-4 py-2 transition rounded-lg"
+                className="text-white"
+                to="/"
+              >
                 About
               </NavLink>
             </li>
-            <li>
-              <NavLink className="text-white" to="/">
+            <li className="hover:bg-primary-light transition rounded-lg">
+              <NavLink
+                activeClassName="bg-primary-light  px-4 py-2 transition rounded-lg"
+                className="text-white"
+                to="/"
+              >
                 Portfolio
               </NavLink>
             </li>
-            <li>
-              <NavLink className="text-white" to="/">
+            <li className="hover:bg-primary-light transition rounded-lg">
+              <NavLink
+                activeClassName="bg-primary-light  px-4 py-2 transition rounded-lg"
+                className="text-white"
+                to="/"
+              >
                 Blog
               </NavLink>
             </li>
-            <li>
-              <NavLink className="text-white" to="/">
+            <li className="hover:bg-primary-light transition  rounded-lg">
+              <NavLink
+                activeClassName="bg-primary-light  px-4 py-2 transition rounded-lg"
+                className="text-white"
+                to="/"
+              >
                 Contact
               </NavLink>
             </li>
