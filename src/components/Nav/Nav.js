@@ -13,7 +13,7 @@ const Nav = () => {
   console.log(scroll);
 
   return (
-    <div className="bg-dark-blue w-full shadow-sm border-primary border-b-4">
+    <div className="bg-dark-blue w-full shadow-sm border-primary border-b-4 sticky top-0 z-10	">
       <div className={`my-container ${Classes.Nav}`}>
         <nav className="py-6">
           <ul className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 text-xl font-light tracking-wide">

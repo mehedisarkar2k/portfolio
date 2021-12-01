@@ -7,35 +7,35 @@ init("user_4iTNkPRIOlI18bEZPuMdM");
 
 const Contact = () => {
   // const [fieldItems, setFieldItems] = React.useState({});
-  const [name, setName]=React.useState('')
-  const [email, setEmail]=React.useState('')
-  const [message, setMessage]=React.useState('')
- 
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
+
   const handleContact = (e) => {
     e.preventDefault();
     const fieldItems = {
       name: name,
       email: email,
-      message: message
-    }
-  //  console.log(fieldItems);
-  emailjs
-    .send(
-      "service_r2vkaos", //service id
-      "template_9a9b0xe", //template id
-      fieldItems,// field object
-      "user_4iTNkPRIOlI18bEZPuMdM" //user id
-    )
-    .then(
-      function (response) {
-        Swal.fire("Good job!", "Thanks for your message!", "success");
-      },
-      function (error) {
-        Swal.fire("Sorry!", "Something went wrong!Try again", "error");
-      }
-    );
+      message: message,
+    };
+    //  console.log(fieldItems);
+    emailjs
+      .send(
+        "service_r2vkaos", //service id
+        "template_9a9b0xe", //template id
+        fieldItems, // field object
+        "user_4iTNkPRIOlI18bEZPuMdM" //user id
+      )
+      .then(
+        function (response) {
+          Swal.fire("Good job!", "Thanks for your message!", "success");
+        },
+        function (error) {
+          Swal.fire("Sorry!", "Something went wrong!Try again", "error");
+        }
+      );
     e.target.reset();
-}
+  };
 
   return (
     <div className={`${Classes.Contact} bg-dark-blue w-full mt-20 pt-20`}>
