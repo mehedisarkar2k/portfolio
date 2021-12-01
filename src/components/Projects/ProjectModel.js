@@ -49,7 +49,7 @@ const ProjectModel = ({ isOpen , closeModal ,project}) => {
                 </Dialog.Title>
                 <div className="mt-2">
                     {
-                        project.description.map(detail => <li className="text-sm text-gray-500">
+                        project.description.map((detail , index) => <li className="text-sm text-gray-500" key={index}>
                              
                             {detail}
                         </li>)
