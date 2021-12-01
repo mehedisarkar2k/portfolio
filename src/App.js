@@ -2,10 +2,11 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import About from "./components/About/About";
 import Banner from "./components/Banner/Banner";
+import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
 import Project from "./components/Projects/Project";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Nav />
             <About />
             <Project />
+            <Blog/>
             <Contact />
             <Footer />
           </Route>
