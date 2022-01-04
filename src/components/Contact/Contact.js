@@ -1,9 +1,8 @@
+import emailjs, { init } from "emailjs-com";
 import React from "react";
-import Classes from "./Contact.module.css";
-import { init } from "emailjs-com";
-import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
-init("user_4iTNkPRIOlI18bEZPuMdM");
+import Classes from "./Contact.module.css";
+init("user_C9C4gWcEWgpjxeBpbNdvr");
 
 const Contact = () => {
   // const [fieldItems, setFieldItems] = React.useState({});
@@ -14,27 +13,27 @@ const Contact = () => {
   const handleContact = (e) => {
     e.preventDefault();
     const fieldItems = {
-      name: name,
+      from_name: name,
       email: email,
       message: message,
     };
     //  console.log(fieldItems);
     emailjs
       .send(
-        "service_r2vkaos", //service id
-        "template_9a9b0xe", //template id
+        "service_rjucdzp", //service id
+        "template_k9451jg", //template id
         fieldItems, // field object
-        "user_4iTNkPRIOlI18bEZPuMdM" //user id
+        "user_C9C4gWcEWgpjxeBpbNdvr" //user id
       )
       .then(
         function (response) {
           Swal.fire("Good job!", "Thanks for your message!", "success");
+          e.target.reset();
         },
         function (error) {
           Swal.fire("Sorry!", "Something went wrong!Try again", "error");
         }
       );
-    e.target.reset();
   };
 
   return (
@@ -67,7 +66,7 @@ const Contact = () => {
             </div>
             <div className="relative mb-4 ">
               <label
-                htmlFor="name"
+                htmlFor="email"
                 className="leading-7 text-primary-light text-xl"
               >
                 Email

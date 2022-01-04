@@ -1,6 +1,8 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import Typewriter from "typewriter-effect";
 import Classes from "./Banner.module.css";
+import "./Typewriter.css";
 
 const Banner = () => {
   return (
@@ -11,7 +13,25 @@ const Banner = () => {
             Hello, I'm <span className="text-secondary">Mehedi Sarkar</span>
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl mt-2 text-white capitalize">
-            I'm Full Stack Web Developer
+            I'm{" "}
+            <Typewriter
+              options={{
+                strings: [
+                  "Web Developer",
+                  "Frontend Developer",
+                  "Backend Developer",
+                  "Full Stack Developer",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+            {/*  multiText={[
+                "Web Developer",
+                "Frontend Developer",
+                "Backend Developer",
+                "Full Stack Developer",
+              ]} */}
           </p>
 
           <div className="flex items-center justify-center">
